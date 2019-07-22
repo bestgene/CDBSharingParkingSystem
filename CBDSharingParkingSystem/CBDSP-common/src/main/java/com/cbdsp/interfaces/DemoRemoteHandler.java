@@ -1,4 +1,4 @@
-package com.cbdsp.Interfaces;
+package com.cbdsp.interfaces;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;

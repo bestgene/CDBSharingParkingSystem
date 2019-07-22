@@ -1,4 +1,4 @@
-package com.cbdsp.Interfaces;
+package com.cbdsp.interfaces;
 
 import org.springframework.stereotype.Component;
 
