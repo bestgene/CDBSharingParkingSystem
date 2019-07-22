@@ -93,5 +93,10 @@
 	<modules>
 		<module>CBDSP-common</module>
 		<module>CBDSP-landlord-8020</module>
+		<module>CBDSP-Eureka-9001</module>
+		<module>CBDSP-Eureka-9000</module>
+		<module>CBDSP-zuul-7000</module>
+		<module>CBDSP-Hystrix-dashboard-9999</module>
+
 	</modules>
 </project>

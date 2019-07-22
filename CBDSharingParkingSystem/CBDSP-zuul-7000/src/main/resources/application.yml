@@ -1,0 +1,31 @@
+server:
+  port: 7000          #当前服务的端口号
+  
+spring:
+   application:
+    name: CBDSharingParkingSystem-zuul   #当前服务的名字，后面会用到
+      
+eureka:
+  client: #客户端注册进eureka服务列表内
+    service-url: 
+       defaultZone: http://127.0.0.1:9000/eureka,http://127.0.0.1:9001/eureka
+  instance: 
+    instance-id: CBDSharingParkingSystem-zuul # 配置注册中心显示出来的微服务名称
+    prefer-ip-address: true     #访问路径可以显示IP地址  x
+
+zuul: 
+  ignored-services: '*'   #设置不能使用微服务名称来访问项目
+  routes: 
+     user: 
+       service-id: woniustore-user
+       path: /user/**
+     product: 
+       service-id: woniustore-product  #你们写的provider类的微服务名称加到下面这里是个示范
+       path: /product/**
+   
+
+info: #监控信息 
+  app.name: CBDSharingParkingSystem
+  company.name: www.woniuxy.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
