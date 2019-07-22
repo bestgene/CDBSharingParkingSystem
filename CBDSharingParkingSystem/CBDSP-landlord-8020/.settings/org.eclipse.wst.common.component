@@ -4,6 +4,9 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="CBDSP-common-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/CBDSP-common/CBDSP-common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="CBDSharingParkingSystem"/>
         <property name="java-output-path" value="/CBDSP-landlord-8020/target/classes"/>
     </wb-module>
