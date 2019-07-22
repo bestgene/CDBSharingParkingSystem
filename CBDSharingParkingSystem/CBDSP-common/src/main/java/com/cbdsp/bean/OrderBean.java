@@ -15,7 +15,7 @@ public class OrderBean {
 	private String order_message;
 	private Integer order_state;
 	private Integer order_flag;
-	//private UserBean user;
+	private UserBean user;
 	private LeaseBean lease;
 	
 }

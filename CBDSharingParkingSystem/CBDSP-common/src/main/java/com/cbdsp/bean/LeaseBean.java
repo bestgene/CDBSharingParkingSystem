@@ -15,6 +15,6 @@ public class LeaseBean {
 	private String lease_end;
 	private double lease_price;
 	private Integer lease_state;
-	private Integer flag;
+	private Integer lease_flag;
 	private ParkBean park;
 }
