@@ -9,12 +9,13 @@ import lombok.experimental.Accessors;
 @AllArgsConstructor
 @Data
 @Accessors(chain=true)   //链式表达
-public class DemoBean{
-	private int p_id;
-	private String p_productName;
-	private String p_message;
-	private int p_number;
-	private double p_price;
-	private String p_imgName;
+public class OrderBean {
+	private Integer order_id;
+	private String order_number;
+	private String order_message;
+	private Integer order_state;
+	private Integer order_flag;
+	//private UserBean user;
+	private LeaseBean lease;
+	
 }
-

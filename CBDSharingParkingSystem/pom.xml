@@ -92,5 +92,6 @@
 	</build>
 	<modules>
 		<module>CBDSP-common</module>
+		<module>CBDSP-landlord-8020</module>
 	</modules>
 </project>
